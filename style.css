@@ -1,0 +1,353 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+
+}
+
+*, *::before, *::after {
+  position: relative;
+  box-sizing: inherit;
+}
+
+
+a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  margin:0px auto;
+  background-color: #f6f6f6;
+  height: 10rem;
+}
+
+
+h1 {
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 4.8rem;
+  padding-top: 15%;
+  font-weight: bold;
+}
+
+
+.linktext {
+  color: #444;
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.bgcolor {
+  background-color: #f6f6f6;
+  padding-top: 1rem;
+}
+
+
+h2 {
+font-size: 1.8rem;
+font-family: 'Julius Sans One', sans-serif;
+}
+
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #444;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.links {
+padding-bottom: 2rem;
+
+}
+
+p {
+  color: #444;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 32px;
+  text-align: center;
+  padding-bottom: 27px;
+  vertical-align: baseline;
+  font-size: 100%;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.animate-pop-in {
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+opacity: 0
+}
+
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+.header__title {
+  margin: 1rem 0;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  animation-delay: .8s;
+}
+
+
+.header__subtitle {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+text-align: center;
+color: white;
+animation-delay: 1s;
+}
+
+
+
+
+.parallax {
+    /* The image used - Photo by Colin Cassidy on Unsplash */
+
+ background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover.jpg');
+animation-delay: .6s;
+
+
+    /* Set a specific height */
+    min-height: 700px;
+    overflow-x:hidden;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+
+    background-size: cover;
+
+
+
+
+}
+
+/* linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), */
+
+
+/* If the screen size is 500px wide or less, change the bgimage */
+@media screen and (max-width: 500px) {
+  .parallax {
+    background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover500.jpg');
+    height: 420px;
+
+  }
+
+}
+
+
+
+.snowflake {
+  font-size: 300px;
+  font-weight: bolder;
+}
+
+/* If the screen size is 500px wide or less, set the font-size of h2 to 80px */
+@media screen and (max-width: 500px) {
+  .snowflake {
+    font-size: 130px;
+    text-align: center;
+
+  }
+
+}
+
+
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  transition: 0.4s all;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 0.7rem;
+  flex: 1;
+
+}
+
+@media (max-width: 500px) {
+  .topnav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 18px;
+
+  }
+}
+
+.menu {
+margin: 10px;
+padding-right: 10px;
+color: #444;
+font-family: 'Oswald', sans-serif;
+}
+
+
+
+@media (max-width: 500px) {
+  .menu {
+  display: flex;
+  text-align: center;
+  padding-right: 0;
+  text-align: center;
+  justify-content: space-around;
+
+  }
+}
+
+
+.logo-snowflake {
+color: #E76C67;
+font-size: 40px;
+padding-top: 2.2px;
+padding-left: 20px;
+flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+  .logo-snowflake {
+    display: grid;
+    text-align: center;
+    flex-basis: 100%;
+    color: #E76C67;
+    font-size: 25px;
+  }
+}
+
+
+.intro {
+display: flex;
+justify-content: center;
+width: 70%;
+text-align: center;
+margin: auto;
+padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .intro {
+width: 100%;
+padding: 2.5rem 1.5rem 1.5rem;
+text-align: center;
+  }
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 1rem;
+  align-items: center;
+
+}
+
+
+
+.container-bottom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+.responsive-image {
+  display: block;
+  width: 100%;
+    height: 60vh;
+   object-fit:cover;
+
+}
+
+
+
+
+.responsive-main-image {
+  display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      padding-top: 3rem;
+      padding-bottom: .5rem;
+
+}
+
+
+
+
+.cell img {
+  display: block;
+
+}
+
+
+
+.cell {
+  margin: 0.5rem;
+  background-color: white;
+
+}
+
+
+/*tablet*/
+
+@media screen and (min-width: 600px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+
+  }
+  .cell {
+    width: calc(50% - 2rem);
+    background-color: white;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+    background-color: white;
+  }
