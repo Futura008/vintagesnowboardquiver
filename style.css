@@ -38,10 +38,19 @@ footer {
 h1 {
   color: black;
   font-family: 'Oswald', sans-serif;
-  font-size: 4.8rem;
+  font-size: 5.5rem;
   padding-top: 15%;
   font-weight: bold;
 }
+
+/* If the screen size is 640px wide or less, set the font-size of h1 to 4rem */
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+}
+
 
 
 .linktext {
@@ -52,6 +61,18 @@ h1 {
   text-align: center;
   padding-bottom: 3rem;
 }
+
+/* If the screen size is 640px wide or less, set the font-size to 3rem */
+@media screen and (max-width: 640px) {
+  .linktext {
+    font-size: 3.8rem;
+    line-height: 1;
+  }
+
+}
+
+
+
 
 .bgcolor {
   background-color: #f6f6f6;
@@ -157,7 +178,6 @@ animation-delay: .6s;
 
 }
 
-/* linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), */
 
 
 /* If the screen size is 500px wide or less, change the bgimage */
