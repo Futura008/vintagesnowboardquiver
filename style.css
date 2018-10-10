@@ -170,15 +170,9 @@ animation-delay: .6s;
     -moz-background-size: cover;
     -o-background-size: cover;
 
-
     background-size: cover;
 
-
-
-
 }
-
-
 
 /* If the screen size is 500px wide or less, change the bgimage */
 @media screen and (max-width: 500px) {
@@ -186,9 +180,23 @@ animation-delay: .6s;
     background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover500.jpg');
     height: 420px;
 
+    min-height: 500px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .parallax {
+    background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover1024.jpg');
+    height: 650px;
+
+    min-height: 500px;
+
   }
 
 }
+
+
 
 
 
