@@ -149,7 +149,6 @@ animation-delay: 1s;
 
 
 
-
 .parallax {
     /* The image used - Photo by Colin Cassidy on Unsplash */
 
@@ -174,23 +173,47 @@ animation-delay: .6s;
 
 }
 
+
+
 /* If the screen size is 500px wide or less, change the bgimage */
 @media screen and (max-width: 500px) {
   .parallax {
     background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover500.jpg');
     height: 420px;
-
     min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    background-size: cover;
+
+
   }
 }
 
-/*a smart phone in landscape mode*/
+
 @media screen and (min-width: 321px) and (orientation: landscape) {
   .parallax {
     background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover.jpg');
     height: 420px;
 
-    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    background-size: cover;
+
+
   }
 }
 
@@ -200,11 +223,13 @@ animation-delay: .6s;
   .parallax {
     background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover1024.jpg');
     height: 650px;
-
     min-height: 500px;
+
 
   }
 }
+
+
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 /* Portrait */
