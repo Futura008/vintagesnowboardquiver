@@ -182,43 +182,14 @@ animation-delay: .6s;
     height: 420px;
     min-height: 500px;
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-
-    background-size: cover;
 
 
   }
 }
 
 
-@media screen and (min-width: 321px) and (orientation: landscape) {
-  .parallax {
-    background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover.jpg');
-    height: 420px;
 
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-
-    background-size: cover;
-
-
-  }
-}
-
-
-/* iPads in landscape mode */
+/* tablet landscape */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .parallax {
     background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover1024.jpg');
@@ -228,7 +199,6 @@ animation-delay: .6s;
 
   }
 }
-
 
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
