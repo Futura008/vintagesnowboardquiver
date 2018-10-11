@@ -236,6 +236,7 @@ animation-delay: .6s;
 .parallax {
     background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover1024.jpg');
     height: 420px;
+    min-height: 500px;
 
   }
 
@@ -252,6 +253,7 @@ animation-delay: .6s;
 .parallax {
     background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover1024.jpg');
     height: 420px;
+    min-height: 500px;
 
   }
 
@@ -259,7 +261,7 @@ animation-delay: .6s;
 }
 
 
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* ----------- iPhone 6+, 7+ and 8+ landscape ----------- */
 
 @media only screen
   and (min-width: 414px)
@@ -270,13 +272,14 @@ animation-delay: .6s;
 .parallax {
     background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover1024.jpg');
     height: 420px;
+    min-height: 500px;
 
   }
 
 }
 
 
-/* ----------- iPhone X ----------- */
+/* ----------- iPhone X landscape ----------- */
 
 @media only screen
   and (min-width: 375px)
@@ -286,6 +289,7 @@ animation-delay: .6s;
 .parallax {
     background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover1024.jpg');
     height: 420px;
+    min-height: 500px;
 
   }
 
