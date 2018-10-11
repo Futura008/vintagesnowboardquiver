@@ -373,7 +373,7 @@ padding-left: 20px;
 flex-grow: 1;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .logo-snowflake {
     display: grid;
     text-align: center;
