@@ -184,7 +184,18 @@ animation-delay: .6s;
   }
 }
 
+/*a smart phone in landscape mode*/
+@media screen and (min-width: 321px) and (orientation: landscape) {
+  .parallax {
+    background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover500.jpg');
+    height: 420px;
 
+    min-height: 500px;
+  }
+}
+
+
+/* iPads in landscape mode */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .parallax {
     background: linear-gradient(rgba(0,130,170,0),rgba(0,130,170,1)), url('images/bgcover1024.jpg');
@@ -193,8 +204,8 @@ animation-delay: .6s;
     min-height: 500px;
 
   }
-
 }
+
 
 
 
